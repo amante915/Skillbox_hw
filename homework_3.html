@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма для отправки</title>
+</head>
+<body>
+			<main>
+				<h1>Отправка заявки на конференцию</h1>
+				<form>
+				<h2>Основные данные</h2>
+					<p><strong>*Фамилия, имя, отчество:</strong></p>
+					<input type="text" name="nick" required="required" size="40">
+					<br>
+					<p><strong>Дата рождения:</strong></p>
+					<input type="date" name="data">
+					<br><br>
+					<p><strong>Пол:</strong></p>
+					<p><input id="dontsend4" type="radio" name="pol" value="rad1"checked> <label for="dontsend4">Мужской</label> 
+		   		<input id="dontsend5" type="radio" name="pol" value="rad1"> <label for="dontsend5">Женский</label></p>
+				<h2>Данные для создания личного кабинета</h2>
+					<p><strong>* Адресс электронной почты</strong></p>
+					<input type="email" name="email" required="required" size="40">
+					<p><strong>* Пароль для создания личного кабинета</strong></p>
+					<input type="password" name="password" required="required" size="40">
+					<p><strong>* Подтверждения пароля</strong></p>
+					<input type="password" name="password" required="required" size="40">
+				<h2>Материалы для конференции</h2>
+					<p><strong>* Тема доклада:</strong></p>
+					<input type="text" name="docklad" required="required" size="40">
+					<p><strong>* Тезисы доклада (не болеее 1000 символов)</strong></p>
+						<textarea required="required" cols="40" rows="10"></textarea><br>
+					<p><strong>* Файл презентации</strong></p>
+					<input type="file" name="docklad" required="required" size="40">
+				<h3>Дополнительные опции</h3>
+					<input id="dontSend" type="checkbox">&nbsp;<label for="dontSend">Проживание в отеле</label><br>
+					<input id="dontSend1" checked type="checkbox">&nbsp;<label for="dontSend1">Завтрак<label><br>
+					<input id="dontSend2" type="checkbox">&nbsp;<label for="dontSend2">Обед</label><br>
+					<input id="dontSend3" type="checkbox">&nbsp;<label for="dontSend3">Ужин</label>
+					<hr>
+					<input type="submit">
+					<hr>
+					<small>* Поля, отмеченные звёздочкой, являются обязательными для заполнения</small>
+				</form>
+			</main>
+
+
+	
+</body>
+</html>
