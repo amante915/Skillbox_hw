@@ -1,48 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Форма для отправки</title>
-</head>
-<body>
+	<title>Рабочая страница</title>
+	<body>
+			<header>
+						<nav>
+							<ul>
+								<li><a href="#">Основные HTML - теги</a></li>
+								<li><a href="#form">Теги полей и элементов форм</a></li>
+								<li><a href="#">Теги для версти таблиц</a></li>
+						</ul>
+							
+						</nav>
+			</header>
 			<main>
-				<h1>Отправка заявки на конференцию</h1>
-				<form>
-				<h2>Основные данные</h2>
-					<p><strong>*Фамилия, имя, отчество:</strong></p>
-					<input type="text" name="nick" required="required" size="40">
-					<br>
-					<p><strong>Дата рождения:</strong></p>
-					<input type="date" name="data">
-					<br><br>
-					<p><strong>Пол:</strong></p>
-					<p><input id="dontsend4" type="radio" name="pol" value="rad1"checked> <label for="dontsend4">Мужской</label> 
-		   		<input id="dontsend5" type="radio" name="pol" value="rad1"> <label for="dontsend5">Женский</label></p>
-				<h2>Данные для создания личного кабинета</h2>
-					<p><strong>* Адресс электронной почты</strong></p>
-					<input type="email" name="email" required="required" size="40">
-					<p><strong>* Пароль для создания личного кабинета</strong></p>
-					<input type="password" name="password" required="required" size="40">
-					<p><strong>* Подтверждения пароля</strong></p>
-					<input type="password" name="password" required="required" size="40">
-				<h2>Материалы для конференции</h2>
-					<p><strong>* Тема доклада:</strong></p>
-					<input type="text" name="docklad" required="required" size="40">
-					<p><strong>* Тезисы доклада (не болеее 1000 символов)</strong></p>
-						<textarea required="required" cols="40" rows="10"></textarea><br>
-					<p><strong>* Файл презентации</strong></p>
-					<input type="file" name="docklad" required="required" size="40">
-				<h3>Дополнительные опции</h3>
-					<input id="dontSend" type="checkbox">&nbsp;<label for="dontSend">Проживание в отеле</label><br>
-					<input id="dontSend1" checked type="checkbox">&nbsp;<label for="dontSend1">Завтрак<label><br>
-					<input id="dontSend2" type="checkbox">&nbsp;<label for="dontSend2">Обед</label><br>
-					<input id="dontSend3" type="checkbox">&nbsp;<label for="dontSend3">Ужин</label>
-					<hr>
-					<input type="submit">
-					<hr>
-					<small>* Поля, отмеченные звёздочкой, являются обязательными для заполнения</small>
-				</form>
+						<h1>Основные HTML - теги</h1>
+						Lorem ipsum dolor sit amet, consectetur <strong>adipisicing elit</strong> . <u>Eligendi commodi vitae doloribus magni 
+						recusandae asperiores debitis</u>, consequatur, <i>ut consectetur</i>,<br> expedita repellendus maxime. 
+						Amet a aliquam quo cum, quisquam eum molestiae.
 
+						<center>Текст выровненный по центру</center>
+						<h2>Заголовок h2</h2>
+						<h3>Заголовок h3</h3>
+						<h4>Заголовок h4</h4>
+						<h5>Заголовок h5</h5>
+						<h6>Заголовок h6</h6>
+						<pre>
+тег pre который позволяет писать текст под текстом
+						<p>H<sub>2</sub>SO<sub>4</sub></p>
+						</pre>
+						<hr>
+						<small>Мелкий текст</small>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quibusdam sapiente repellat quidem iure at! Illo voluptate dolore molestias dolorum mollitia laborum aspernatur consequatur nisi, similique fugiat. At, aliquid. Voluptates!</p>
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nostrum dolore doloribus ipsum. Dignissimos, facilis, illum. Voluptatum aut beatae consequatur rem iure laboriosam quas, delectus recusandae eligendi necessitatibus, consectetur similique.</div>
+						<div>Cum ullam quos neque pariatur, reiciendis temporibus laudantium quo beatae fugiat sequi a voluptatem molestiae aliquid. Ab nostrum explicabo, aperiam facere accusantium quo, quas molestiae, hic dolor nam rerum a.</div>
+						<div>Voluptatibus, aspernatur. Quod quae quasi aliquam enim. A voluptates inventore amet quas minus tenetur! Fuga architecto veniam cumque voluptates perspiciatis error. Voluptatibus voluptatum quidem non, corrupti sequi, fuga in voluptatem?</div></div>
+						<ol>
+								<li>Первый пунтк</li>
+								<li>Второй пунтк</li>
+								<li>Третий пунтк</li>
+								<img src="comp.png" width="250" usemap="#computer">
+								<map name="computer">
+										<area shape="rect" coords="150, 50, 190, 90" href="https://www.microsoft.com/ru-ru" target="_blank" title="Перейти на сайт Windows">
+								</map>
+								<h2 id="form">Теги полей и элементов форм</h2>
+								<form method="post">
+										<input required="required" placeholder="Год Вашего родения" maxlength="4" type="text" size="30" name="" value="">
+										<input type="submit" name="" value="Далее">
+										<input type="button" disabled="disabled" name="" value="Кнопка">
+										<br><br>
+										<button>
+											<img src="comp.png" width="10">
+										</button>
+										<br><br>
+										<textarea readonly="readonly" cols="30" rows="5">Ваша биография</textarea>
+										<br><br>
+										<select>
+												<option>Выбирите цвет</option>
+												<optgroup label="Цветные цвета">
+												<option>Красный</option>
+												<option>Желтый</option>
+												<option>Синий</option>
+												<option>Зеленый</option>
+												</optgroup>
+												<option>Черный</option>
+												<option>Белый</option>
+												</select>
+										<br><br>
+
+										<input id="dontSend" checked="" type="checkbox">&nbsp;<label for="dontSend">Не присылать мне рекламные письма
+										</label><br><br>
+
+										<input type="radio" checked name="choice">&nbsp;да<br>
+										<input type="radio" name="choice">&nbsp;нет<br>
+										<input type="radio" name="choice">&nbsp;не знаю<br><br>
+
+										<input type="file"><br><br>
+										<input type="email"><br><br>
+										<input type="password"><br>
+										
+
+										<hr>
+										<input type="submit" name="" value="Далее">
+										<br><br><br><br><br><br><br><br><br>
+
+								</form>
+						</ol>
+						
+			
 				<h2 id="tables">Тэги для верстки таблиц</h2>
 				<table border="1" cellspacing="0" cellpadding="10">
 					<tr>
