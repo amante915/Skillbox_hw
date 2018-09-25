@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Рабочая страница</title>
@@ -10,7 +10,7 @@
 								<li><a href="#">Основные HTML - теги</a></li>
 								<li><a href="#form">Теги полей и элементов форм</a></li>
 								<li><a href="#tables">Теги для версти таблиц</a></li>
-						</ul>
+							</ul>
 							
 						</nav>
 			</header>
@@ -20,8 +20,8 @@
 						recusandae asperiores debitis</u>, consequatur, <i>ut consectetur</i>,<br> expedita repellendus maxime. 
 						Amet a aliquam quo cum, quisquam eum molestiae.
 
-						<center>Текст выровненный по центру</center>
-						<h2>Заголовок h2</h2>
+
+						<h2>Заголовок h2</h2>q
 						<h3>Заголовок h3</h3>
 						<h4>Заголовок h4</h4>
 						<h5>Заголовок h5</h5>
@@ -40,23 +40,23 @@
 								<li>Первый пунтк</li>
 								<li>Второй пунтк</li>
 								<li>Третий пунтк</li>
-								<img src="comp.png" width="250" usemap="#computer">
+								<img alt="Изображение компьютера" src="img/comp.png" width="250" usemap="#computer">
 								<map name="computer">
-										<area shape="rect" coords="150, 50, 190, 90" href="https://www.microsoft.com/ru-ru" target="_blank" title="Перейти на сайт Windows">
+										<area shape="rect" coords="150,50,190,90" href="https://www.microsoft.com/ru-ru" alt="Перейти на сайт Windows" target="_blank" title="Перейти на сайт Windows">
 								</map>
 								<h2 id="form">Теги полей и элементов форм</h2>
 								<form method="post">
 										<input required="required" placeholder="Год Вашего родения" maxlength="4" type="text" size="30" name="" value="">
-										<input type="submit" name="" value="Далее">
-										<input type="button" disabled="disabled" name="" value="Кнопка">
+										<input type="submit" name="year" value="Далее">
+										<input type="button" disabled="disabled" value="Кнопка">
 										<br><br>
 										<button>
 											<img src="comp.png" width="10">
 										</button>
 										<br><br>
-										<textarea readonly="readonly" cols="30" rows="5">Ваша биография</textarea>
+										<textarea readonly="readonly" cols="30" rows="5" name="biografy">Ваша биография</textarea>
 										<br><br>
-										<select>
+										<select name="colors">
 												<option>Выбирите цвет</option>
 												<optgroup label="Цветные цвета">
 												<option>Красный</option>
@@ -69,7 +69,7 @@
 												</select>
 										<br><br>
 
-										<input id="dontSend" checked="" type="checkbox">&nbsp;<label for="dontSend">Не присылать мне рекламные письма
+										<input id="dontSend" name="dontSend" checked="" type="checkbox">&nbsp;<label for="dontSend">Не присылать мне рекламные письма
 										</label><br><br>
 
 										<input type="radio" checked name="choice">&nbsp;да<br>
@@ -77,8 +77,8 @@
 										<input type="radio" name="choice">&nbsp;не знаю<br><br>
 
 										<input type="file"><br><br>
-										<input type="email"><br><br>
-										<input type="password"><br>
+										<input type="email" name="email"><br><br>
+										<input type="password" name="password"><br>
 										
 
 										<hr>
